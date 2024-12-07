@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block sub_content %}
+<h2>Liste des utilisateurs</h2>
+<table border="1" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Action</th>  <!-- Ajoutez une colonne pour les actions -->
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <td>{{ user[1] }}</td>  <!-- Changez cet index selon la structure de votre table -->
+            <td>{{ user[2] }}</td>
+            <td>{{ user[3] }}</td>  <!-- Changez cet index selon la structure de votre table -->
+            <td>
+                <form method="POST" action="{{ url_for('deleteUser', user_id=user[0]) }}" style="display:inline;">
+                    <button type="submit" class="btn btn-danger" >Supprimer</button>
+                </form>
+                 <!-- Bouton de modification -->
+                 <form method="GET" action="{{ url_for('editUser', user_id=user[0]) }}" style="display:inline;">
+                    <button type="submit" class="btn btn-primary">Modifier</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
