@@ -21,5 +21,8 @@ Remarque :
 1. Purgez le cache de pip avec la commande : pip cache purge
 2. Ensuite, réinstallez la bibliothèque en spécifiant le répertoire du cache :
 pip install Flask-Bootstrap --cache-dir <chemin_vers_votre_répertoire_de_cache-flask_bootstrap>
+Pour démarrer le projet, utilisez l'une des commandes suivantes :
+flask run ou bien app.py
+
 
 
