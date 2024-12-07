@@ -1,12 +1,8 @@
-Instructions pour exécuter le projet
-Pour faire fonctionner ce projet Flask, veuillez suivre les étapes suivantes :
-
+Instructions pour exécuter le projet: Pour faire fonctionner ce projet Flask, veuillez suivre les étapes suivantes :
 1. Créer un environnement virtuel
-Exécutez la commande suivante pour créer un environnement virtuel Python :
-   python -m venv monenvapp3
+Exécutez la commande suivante pour créer un environnement virtuel Python : python -m venv monenvapp3
 2. Activer l'environnement virtuel
-Une fois l'environnement créé, activez-le avec la commande suivante :
-   monenvapp3\Scripts\activate
+Une fois l'environnement créé, activez-le avec la commande suivante : .monenvapp3\Scripts\activate
 3. Installer les bibliothèques nécessaires
 Installez les dépendances du projet en exécutant les commandes suivantes :
   pip install Flask
@@ -18,10 +14,8 @@ Installez les dépendances du projet en exécutant les commandes suivantes :
   pip install bcrypt
 Remarque :
 -Si l'une des bibliothèques rencontre un problème d'installation, essayez d'abord de la désinstaller puis de la réinstaller :
-
   pip uninstall monenvapp3
   python -m venv monenvapp3
-
 -Si vous rencontrez une erreur de permission lors de l'installation de la bibliothèque "  pip install flask-bootstrap
 ", suivez les étapes ci-dessous :
 1. Purgez le cache de pip avec la commande : pip cache purge
